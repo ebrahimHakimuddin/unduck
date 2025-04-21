@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Unduck</ShortName>
+  <Description>Enables all of DuckDuckGo's bangs.</Description>
+  <Url type="text/html" template="https://search.ebrahim.co.tz?q=%s"/>
+  <Url type="application/opensearch+xml" rel="self" template="https://example.com/opensearch.xml" />
+  <Image height="16" width="16" type="image/x-icon">https://</Image>
+  <!-- <Developer>Example.com</Developer>
+  <Attribution>Copyright 2025, Example.com</Attribution> -->
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <Language>en-us</Language>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>
