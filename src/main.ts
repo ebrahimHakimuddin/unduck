@@ -50,7 +50,9 @@ const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG);
 function getBangredirectUrl() {
   const url = new URL(window.location.href);
   const query = url.searchParams.get("q")?.trim() ?? "";
-  if (!query) {
+  if (String(url).includes("/opensearch.xml")) {
+    return null
+  } else if (!query) {
     noSearchDefaultPageRender();
     return null;
   }
