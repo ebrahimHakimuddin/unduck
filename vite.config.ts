@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,xml}'], // Ensure XML is included here
+      },
     }),
   ],
 });
